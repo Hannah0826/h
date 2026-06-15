@@ -1,0 +1,33 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="小猫开心出门玩">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#b8e4ff"/><stop offset="100%" stop-color="#e8f7ff"/></linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a8df8a"/><stop offset="100%" stop-color="#7ec96a"/></linearGradient>
+    <linearGradient id="catBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffc978"/><stop offset="100%" stop-color="#ff9f4a"/></linearGradient>
+  </defs>
+  <style>
+    @keyframes cloudMove { 0% { transform: translateX(0); } 100% { transform: translateX(28px); } }
+    @keyframes catWalk { 0% { transform: translate(120px, 0); } 100% { transform: translate(300px, 0); } }
+    @keyframes catBounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    @keyframes tailWag { 0%,100% { transform: rotate(-8deg); } 50% { transform: rotate(18deg); } }
+    .cloud-a { animation: cloudMove 9s ease-in-out infinite alternate; }
+    .cat-walker { animation: catWalk 5s ease-in-out infinite alternate; }
+    .cat-bounce { animation: catBounce .45s ease-in-out infinite; transform-origin: 40px 48px; }
+    .cat-tail { animation: tailWag .35s ease-in-out infinite; transform-origin: 8px 42px; }
+  </style>
+  <rect width="640" height="360" fill="url(#sky)"/>
+  <circle cx="520" cy="72" r="42" fill="#ffe98a"/>
+  <g class="cloud-a"><ellipse cx="120" cy="68" rx="38" ry="18" fill="#fff"/><ellipse cx="148" cy="62" rx="28" ry="16" fill="#fff"/></g>
+  <ellipse cx="320" cy="300" rx="360" ry="70" fill="url(#hill)"/>
+  <g class="cat-walker">
+    <g class="cat-bounce">
+      <g class="cat-tail"><path d="M8 42 Q-8 28 -2 14 Q4 8 10 18" fill="none" stroke="#e8873a" stroke-width="7" stroke-linecap="round"/></g>
+      <ellipse cx="40" cy="48" rx="34" ry="28" fill="url(#catBody)"/>
+      <circle cx="58" cy="34" r="24" fill="url(#catBody)"/>
+      <polygon points="42,18 48,2 54,18" fill="#ff9f4a"/>
+      <polygon points="62,18 68,2 74,18" fill="#ff9f4a"/>
+      <circle cx="52" cy="32" r="3" fill="#4a3728"/><circle cx="66" cy="32" r="3" fill="#4a3728"/>
+    </g>
+    <path d="M248 228 Q280 210 312 228" fill="none" stroke="#ff8fcb" stroke-width="3" opacity=".75"/>
+  </g>
+  <text x="24" y="34" font-family="sans-serif" font-size="16" fill="#5a8fbf" font-weight="700">一起出门玩啦～</text>
+</svg>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>喵语拾光</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="intro-active">
+  <div class="sky-bg bg-mode-intro" id="skyBg"></div>
+  <div class="floating-hearts" id="floatingHearts"></div>
+  <div class="scene-particles" id="sceneParticles" aria-hidden="true"></div>
+
+  <div class="intro-overlay" id="introOverlay">
+    <div class="intro-play-scene" aria-hidden="true">
+      <div class="intro-ambient">
+        <span class="dust dust-1"></span>
+        <span class="dust dust-2"></span>
+        <span class="dust dust-3"></span>
+        <span class="dust dust-4"></span>
+        <span class="dust dust-5"></span>
+      </div>
+      <div class="room-prop room-lamp-glow"></div>
+      <div class="room-prop room-fish-bowl">
+        <span class="fish fish-a">🐟</span>
+        <span class="fish fish-b">🐟</span>
+      </div>
+      <div class="room-prop room-hanging-toy">
+        <span class="toy-string"></span>
+        <span class="toy-ball-hang">🔴</span>
+      </div>
+      <div class="room-cat room-cat-cushion">
+        <img src="assets/cats/cat-orange.png" alt="" />
+      </div>
+      <div class="room-cat room-cat-tree">
+        <img src="assets/cats/cat-grey.png" alt="" />
+      </div>
+      <div class="room-cat room-cat-shelf">
+        <img src="assets/cats/cat-cream.png" alt="" />
+      </div>
+      <div class="play-cat play-cat-1">
+        <img src="assets/cats/cat-orange.png" alt="" />
+      </div>
+      <div class="play-cat play-cat-2">
+        <img src="assets/cats/cat-calico.png" alt="" />
+        <span class="play-yarn"></span>
+        <span class="play-yarn play-yarn-2"></span>
+      </div>
+      <div class="play-cat play-cat-3">
+        <img src="assets/cats/cat-brown.png" alt="" />
+      </div>
+      <div class="play-cat play-cat-4">
+        <img src="assets/cats/cat-cream.png" alt="" />
+        <span class="play-feather">🪶</span>
+      </div>
+      <div class="play-cat play-cat-5">
+        <img src="assets/cats/cat-grey.png" alt="" />
+      </div>
+      <div class="play-toy play-toy-ball play-toy-a"></div>
+      <div class="play-toy play-toy-ball play-toy-b"></div>
+      <div class="play-toy play-toy-ball play-toy-c"></div>
+      <div class="play-toy play-mouse">🐭</div>
+      <div class="play-spark play-spark-1">✨</div>
+      <div class="play-spark play-spark-2">🐾</div>
+      <div class="play-spark play-spark-3">✨</div>
+      <div class="play-spark play-spark-4">💕</div>
+      <div class="play-spark play-spark-5">🐾</div>
+    </div>
+    <div class="intro-screen">
+      <div class="intro-badge">🐾 语音互动游戏</div>
+      <div class="intro-title">喵语拾光</div>
+      <p class="intro-copy">和小猫说话、一起声音闯关<br />全程用语音就能互动</p>
+      <button type="button" class="intro-mic-btn" id="introMicBtn">🎙️ 允许使用麦克风</button>
+      <p class="intro-mic-hint" id="introMicHint">打开页面后先点这里，在浏览器弹窗中选择「允许」</p>
+      <button class="enter-btn intro-enter-btn" id="enterBtn">开始游戏</button>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">🐾</span>
+      <div>
+        <div class="brand-title">喵语拾光</div>
+        <div class="brand-subtitle">语音对话 · 声音闯关</div>
+      </div>
+    </div>
+    <div class="topbar-stats">
+      <div class="stat-pill">对话 <span id="voiceCount">0</span> 次</div>
+      <div class="stat-pill">闯关 <span id="gameScore">0</span> 次</div>
+      <div class="stat-pill stat-pill-intimacy">亲密度 <span id="intimacyScore">0</span></div>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <section class="panel panel-bg-home" id="screen-home">
+      <div class="hero hero-overlay home-hero">
+        <div class="hero-title">你想怎么和小猫玩？</div>
+      </div>
+
+      <div class="home-invite-scene" aria-hidden="true">
+        <div class="home-invite-glow"></div>
+        <div class="home-invite-rug"></div>
+        <div class="home-invite-sparks">
+          <span class="invite-spark invite-spark-1">💕</span>
+          <span class="invite-spark invite-spark-2">✨</span>
+          <span class="invite-spark invite-spark-3">🐾</span>
+          <span class="invite-spark invite-spark-4">💕</span>
+          <span class="invite-spark invite-spark-5">✨</span>
+        </div>
+        <div class="home-invite-cats">
+          <div class="invite-cat invite-cat-1">
+            <div class="invite-bubble invite-bubble-1">喵～来聊天嘛</div>
+            <img src="assets/cats/cat-orange.png" alt="" />
+            <span class="invite-paw invite-paw-1">🐾</span>
+          </div>
+          <div class="invite-cat invite-cat-2">
+            <div class="invite-bubble invite-bubble-2">想要摸摸～</div>
+            <img src="assets/cats/cat-calico.png" alt="" />
+          </div>
+          <div class="invite-cat invite-cat-3">
+            <div class="invite-bubble invite-bubble-3">一起闯关嘛！</div>
+            <img src="assets/cats/cat-grey.png" alt="" />
+            <span class="invite-paw invite-paw-2">🐾</span>
+          </div>
+          <div class="invite-cat invite-cat-4">
+            <div class="invite-bubble invite-bubble-4">喵呜～选我呀</div>
+            <img src="assets/cats/cat-cream.png" alt="" />
+          </div>
+        </div>
+        <div class="home-invite-toys">
+          <span class="invite-toy invite-toy-yarn"></span>
+          <span class="invite-toy invite-toy-fish">🐟</span>
+          <span class="invite-toy invite-toy-ball"></span>
+        </div>
+      </div>
+
+      <p class="home-mode-hint">选择下面一个模式，全程可以用语音和小猫交流</p>
+
+      <div class="nav-grid nav-grid-two">
+        <button class="nav-card nav-card-main" data-target="chat">
+          <div class="nav-emoji">🎤</div>
+          <h2>和小猫语音对话交流</h2>
+          <p>长按麦克风说话，小猫会用喵语回应你</p>
+          <span class="nav-tag">自由聊天</span>
+        </button>
+        <button class="nav-card nav-card-main" data-target="jump">
+          <div class="nav-emoji">🎮</div>
+          <h2>和小猫玩声音闯关</h2>
+          <p>用声音大小控制弹跳，闯过障碍吃到小鱼干</p>
+          <span class="nav-tag">声音闯关</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="panel panel-bg-chat module-screen" id="screen-chat">
+      <div class="chat-room-deco" aria-hidden="true">
+        <span class="chat-deco-bubble chat-deco-bubble-1">喵～想听你说话</span>
+        <span class="chat-deco-bubble chat-deco-bubble-2">今天聊点什么？</span>
+        <span class="chat-deco-bubble chat-deco-bubble-3">呼噜呼噜～</span>
+        <span class="chat-deco-icon chat-deco-mic">🎙️</span>
+        <span class="chat-deco-icon chat-deco-heart">💕</span>
+        <span class="chat-deco-icon chat-deco-paw">🐾</span>
+        <div class="chat-deco-waves">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <button class="back-btn" data-target="home">← 返回主菜单</button>
+      <div class="module-hero chat-hero">
+        <div class="cat-scene" id="chatCat">
+          <div class="hint-bubbles" id="hintBubbles">
+            <div class="hint-bubble hint-bubble-1">试着问问小猫出去玩怎么样</div>
+            <div class="hint-bubble hint-bubble-2">试着问问小猫要吃小鱼干吗</div>
+            <div class="hint-bubble hint-bubble-3">是否要让小猫独自呆着</div>
+            <div class="hint-bubble hint-bubble-4">试着问问小猫可以抚摸吗</div>
+          </div>
+          <div class="cat-character">
+            <div class="cat-echo-ripples" id="catEchoRipples" aria-hidden="true">
+              <span class="echo-ring echo-ring-1"></span>
+              <span class="echo-ring echo-ring-2"></span>
+              <span class="echo-ring echo-ring-3"></span>
+              <span class="echo-ring echo-ring-4"></span>
+            </div>
+            <img src="assets/cat-nobg.png" alt="小橘猫" class="cat-main-image" id="catMainImage" />
+          </div>
+        </div>
+        <div class="chat-hero-text">
+          <h1>和小猫语音对话</h1>
+          <p>说出你想对小猫说的话，它会听懂并喵叫回应你</p>
+        </div>
+      </div>
+
+      <div class="chat-log" id="chatLog">
+        <div class="chat-bubble cat-bubble">
+          <span class="bubble-avatar">🐱</span>
+          <div class="bubble-body">
+            <p>喵～你好呀！我是小橘。看看周围的气泡，试着用语音问我问题吧～</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="recording-rings hidden" id="recordingRings">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="voice-stage">
+        <button class="mic-btn" id="micBtn" aria-label="长按录音">🎙️</button>
+        <div class="mic-tip">长按麦克风说话（至少 1 秒），松开后小猫会回应</div>
+      </div>
+
+
+      <div class="module-status" id="chatStatus">等待你和小猫说话…</div>
+    </section>
+
+    <section class="panel panel-bg-jump module-screen" id="screen-jump">
+      <div class="jump-room-deco" aria-hidden="true">
+        <span class="jump-deco-badge">🏁 闯关模式</span>
+        <span class="jump-deco-fish jump-deco-fish-1">🐟</span>
+        <span class="jump-deco-fish jump-deco-fish-2">🐟</span>
+        <span class="jump-deco-icon jump-deco-star">⭐</span>
+        <span class="jump-deco-icon jump-deco-trophy">🏆</span>
+        <span class="jump-deco-icon jump-deco-paw">🐾</span>
+        <span class="jump-deco-hint">大声跳更高！</span>
+        <div class="jump-deco-waves">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <button class="back-btn" data-target="home" id="jumpBackBtn">← 返回主菜单</button>
+      <div class="jump-header">
+        <h1>声音闯关 · 抢小鱼干</h1>
+        <p>对着麦克风发出声音，声音越大跳得越高！闯过障碍吃到终点小鱼干就通关</p>
+      </div>
+      <div class="jump-hud">
+        <span>音量条</span>
+        <div class="volume-bar"><div class="volume-fill" id="jumpVolumeFill"></div></div>
+        <span id="jumpStatusText">点击开始闯关</span>
+      </div>
+      <div class="jump-stage-wrap">
+        <canvas id="jumpCanvas" width="900" height="420"></canvas>
+      </div>
+      <div class="jump-controls">
+        <button class="primary-btn" id="jumpStartBtn">开始闯关</button>
+        <button class="secondary-btn hidden" id="jumpRetryBtn">再试一次</button>
+      </div>
+      <div class="module-status" id="jumpStatus">请先允许麦克风，然后点击开始</div>
+    </section>
+  </main>
+
+  <div class="video-overlay hidden" id="videoOverlay">
+    <div class="video-modal">
+      <button class="video-close" id="videoClose" aria-label="关闭视频">×</button>
+      <div class="video-square">
+        <video id="sceneVideo" controls playsinline></video>
+      </div>
+      <div class="video-caption" id="videoCaption"></div>
+    </div>
+  </div>
+
+  <div class="win-overlay hidden" id="winOverlay">
+    <div class="win-card">
+      <h2>🎉 通关成功！</h2>
+      <p id="winIntimacyMsg">小猫终于吃到了终点的小鱼干～亲密度 +5</p>
+      <div class="win-video-wrap">
+        <video id="winVideo" src="assets/videos/fish.mp4" loop muted playsinline autoplay></video>
+      </div>
+      <div class="win-actions">
+        <button class="primary-btn" id="winRetryBtn">再闯一关</button>
+        <button class="secondary-btn" id="winHomeBtn">返回主菜单</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgm" loop preload="auto"></audio>
+  <script src="js/speech-fallback.js"></script>
+  <script src="js/emotions.js"></script>
+  <script src="js/audio-engine.js"></script>
+  <script src="js/jump-game.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

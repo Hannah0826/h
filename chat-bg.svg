@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf3"/>
+      <stop offset="100%" stop-color="#fff2e4"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8c9" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#fff8c9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3d5a8"/>
+      <stop offset="100%" stop-color="#e8c08d"/>
+    </linearGradient>
+    <linearGradient id="rug" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff4e8"/>
+      <stop offset="100%" stop-color="#ffe3c9"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="2" fill="#ffb8d4" opacity="0.14"/>
+    </pattern>
+  </defs>
+
+  <rect width="1440" height="900" fill="url(#wall)"/>
+  <polygon points="0,0 420,0 620,900 0,900" fill="url(#sun)"/>
+
+  <!-- string lights -->
+  <path d="M60 48 Q720 82 1380 48" fill="none" stroke="#ffd35a" stroke-width="2" opacity="0.4"/>
+  <g fill="#fff6a8" opacity="0.82">
+    <circle cx="140" cy="62" r="6"/><circle cx="320" cy="74" r="6"/><circle cx="500" cy="66" r="6"/>
+    <circle cx="720" cy="78" r="7"/><circle cx="940" cy="66" r="6"/><circle cx="1120" cy="74" r="6"/><circle cx="1300" cy="62" r="6"/>
+  </g>
+
+  <!-- window -->
+  <rect x="36" y="40" width="220" height="300" rx="8" fill="#dff3ff" stroke="#c7e3f3" stroke-width="6"/>
+  <line x1="146" y1="40" x2="146" y2="340" stroke="#c7e3f3" stroke-width="4"/>
+  <line x1="36" y1="190" x2="256" y2="190" stroke="#c7e3f3" stroke-width="4"/>
+  <rect x="28" y="40" width="28" height="300" rx="6" fill="#ffd9ea" opacity="0.7"/>
+  <rect x="236" y="40" width="28" height="300" rx="6" fill="#ffd9ea" opacity="0.7"/>
+  <rect x="44" y="332" width="204" height="14" rx="4" fill="#e7bb7d"/>
+  <ellipse cx="92" cy="324" rx="18" ry="11" fill="#9ed88a"/>
+  <rect x="84" y="310" width="14" height="16" rx="4" fill="#c89563"/>
+
+  <!-- wall speech bubbles (decorative) -->
+  <g opacity="0.92">
+    <rect x="320" y="72" width="118" height="52" rx="16" fill="#fff" stroke="#ffb8d4" stroke-width="3"/>
+    <path d="M352 124 L368 138 L372 124 Z" fill="#fff" stroke="#ffb8d4" stroke-width="3"/>
+    <text x="338" y="96" font-family="sans-serif" font-size="15" fill="#b07a93" font-weight="700">喵～你好呀</text>
+    <text x="338" y="116" font-size="13" fill="#8c7c99">想和你说话…</text>
+
+    <rect x="1080" y="88" width="128" height="56" rx="16" fill="#fff" stroke="#ffc9de" stroke-width="3"/>
+    <path d="M1188 144 L1204 158 L1208 144 Z" fill="#fff" stroke="#ffc9de" stroke-width="3"/>
+    <text x="1098" y="112" font-size="14" fill="#b07a93" font-weight="700">长按麦克风</text>
+    <text x="1098" y="132" font-size="13" fill="#8c7c99">和小橘聊天吧</text>
+
+    <rect x="1240" y="220" width="96" height="44" rx="14" fill="#fff8ef" stroke="#e8c9a0" stroke-width="2"/>
+    <text x="1256" y="248" font-size="14" fill="#f07a3a">呼噜呼噜～</text>
+
+    <rect x="88" y="248" width="104" height="40" rx="14" fill="#fff0f8" stroke="#ff8fcb" stroke-width="2" opacity="0.85"/>
+    <text x="104" y="274" font-size="13" fill="#b07a93">摸摸头嘛</text>
+  </g>
+
+  <!-- sound wave decoration -->
+  <g stroke="#ff8fcb" stroke-width="4" stroke-linecap="round" opacity="0.35">
+    <line x1="480" y1="118" x2="480" y2="148"/><line x1="494" y1="108" x2="494" y2="158"/>
+    <line x1="508" y1="114" x2="508" y2="152"/><line x1="522" y1="104" x2="522" y2="162"/>
+    <line x1="536" y1="112" x2="536" y2="154"/>
+  </g>
+  <g stroke="#6eb5ff" stroke-width="3" stroke-linecap="round" opacity="0.3">
+    <line x1="1320" y1="320" x2="1320" y2="344"/><line x1="1332" y1="312" x2="1332" y2="352"/>
+    <line x1="1344" y1="318" x2="1344" y2="348"/><line x1="1356" y1="308" x2="1356" y2="356"/>
+  </g>
+
+  <!-- mic on shelf -->
+  <rect x="560" y="168" width="280" height="14" rx="4" fill="#e7bb7d"/>
+  <rect x="564" y="182" width="8" height="44" fill="#d8a86a"/>
+  <rect x="832" y="182" width="8" height="44" fill="#d8a86a"/>
+  <rect x="640" y="148" width="36" height="36" rx="10" fill="#ffb65b" stroke="#e8a040" stroke-width="2"/>
+  <rect x="652" y="158" width="12" height="18" rx="4" fill="#fff" opacity="0.7"/>
+  <ellipse cx="658" cy="172" rx="8" ry="5" fill="#fff" opacity="0.5"/>
+  <rect x="696" y="152" width="52" height="32" rx="8" fill="#fff" stroke="#ffb8d4" stroke-width="2"/>
+  <text x="706" y="174" font-size="12" fill="#b07a93">喵语日记</text>
+  <rect x="760" y="156" width="44" height="28" rx="6" fill="#ffd9ea" stroke="#ffb8d4" stroke-width="2"/>
+  <text x="770" y="175" font-size="11" fill="#b07a93">💬</text>
+
+  <!-- picture frames -->
+  <rect x="920" y="72" width="110" height="86" rx="6" fill="#fff" stroke="#e8c9a0" stroke-width="5"/>
+  <circle cx="975" cy="112" r="20" fill="#ffd7a8"/>
+  <rect x="1050" y="64" width="120" height="96" rx="6" fill="#fff" stroke="#e8c9a0" stroke-width="5"/>
+  <ellipse cx="1110" cy="108" rx="24" ry="20" fill="#ffc9de"/>
+
+  <!-- chat rug area -->
+  <ellipse cx="720" cy="640" rx="380" ry="95" fill="url(#rug)" opacity="0.72"/>
+  <ellipse cx="720" cy="640" rx="340" ry="78" fill="url(#dots)"/>
+
+  <!-- floor -->
+  <rect y="620" width="1440" height="280" fill="url(#wood)"/>
+  <g stroke="#d9b078" stroke-width="2" opacity="0.65">
+    <line x1="0" y1="650" x2="1440" y2="650"/>
+    <line x1="0" y1="690" x2="1440" y2="690"/>
+    <line x1="0" y1="730" x2="1440" y2="730"/>
+    <line x1="0" y1="770" x2="1440" y2="770"/>
+  </g>
+
+  <!-- conversation sofa corner -->
+  <rect x="180" y="520" width="220" height="52" rx="18" fill="#ffd9ea" opacity="0.75"/>
+  <rect x="200" y="500" width="180" height="36" rx="14" fill="#ffb8d4" opacity="0.55"/>
+  <rect x="196" y="572" width="20" height="38" rx="6" fill="#d8a86a"/>
+  <rect x="364" y="572" width="20" height="38" rx="6" fill="#d8a86a"/>
+  <rect x="248" y="488" width="48" height="28" rx="10" fill="#fff" opacity="0.6"/>
+  <text x="258" y="508" font-size="12" fill="#b07a93">对话角</text>
+
+  <!-- cat tree with chat cushion -->
+  <rect x="980" y="430" width="28" height="190" rx="8" fill="#d8a86a"/>
+  <rect x="900" y="470" width="110" height="18" rx="9" fill="#e7bb7d"/>
+  <rect x="930" y="390" width="100" height="18" rx="9" fill="#e7bb7d"/>
+  <circle cx="945" cy="478" r="24" fill="#fff6ef" stroke="#e8c9a0" stroke-width="3"/>
+  <circle cx="1010" cy="398" r="24" fill="#fff6ef" stroke="#e8c9a0" stroke-width="3"/>
+  <ellipse cx="945" cy="468" rx="16" ry="14" fill="#ffb45a" stroke="#6a5040" stroke-width="2"/>
+  <ellipse cx="1010" cy="388" rx="16" ry="14" fill="#fff6e8" stroke="#6a5040" stroke-width="2"/>
+
+  <!-- fish snack for chat rewards -->
+  <rect x="1180" y="560" width="72" height="10" rx="3" fill="#d8a86a"/>
+  <ellipse cx="1216" cy="548" rx="28" ry="22" fill="#dff3ff" stroke="#6eb5ff" stroke-width="3"/>
+  <text x="1204" y="554" font-size="14">🐟</text>
+  <rect x="1190" y="528" width="52" height="22" rx="8" fill="#fff" stroke="#ffb8d4" stroke-width="2" opacity="0.9"/>
+  <text x="1198" y="544" font-size="11" fill="#b07a93">小鱼干</text>
+
+  <!-- message cards on floor -->
+  <rect x="620" y="580" width="88" height="56" rx="10" fill="#fff" stroke="#ffd0e6" stroke-width="2" transform="rotate(-8 664 608)"/>
+  <text x="636" y="604" font-size="11" fill="#8c7c99" transform="rotate(-8 664 608)">今天聊什么？</text>
+  <text x="636" y="622" font-size="13" fill="#b07a93" font-weight="700" transform="rotate(-8 664 608)">喵语拾光</text>
+
+  <!-- paw + heart decals -->
+  <g fill="#ffb07a" opacity="0.16">
+    <g transform="translate(1320 180) scale(1.1)"><circle r="9"/><circle cx="-12" cy="-14" r="5"/><circle cx="12" cy="-14" r="5"/><circle cx="-16" cy="4" r="5"/><circle cx="16" cy="4" r="5"/></g>
+    <g transform="translate(420 180) scale(0.9)"><circle r="9"/><circle cx="-12" cy="-14" r="5"/><circle cx="12" cy="-14" r="5"/><circle cx="-16" cy="4" r="5"/><circle cx="16" cy="4" r="5"/></g>
+  </g>
+  <text x="800" y="820" font-size="22" opacity="0.14">💕</text>
+  <text x="640" y="780" font-size="18" opacity="0.12">🐾</text>
+  <text x="880" y="760" font-size="16" opacity="0.1">💬</text>
+
+  <!-- center soft highlight -->
+  <ellipse cx="720" cy="480" rx="520" ry="280" fill="#ffffff" opacity="0.32"/>
+</svg>

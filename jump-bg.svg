@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff8fc"/>
+      <stop offset="55%" stop-color="#ffeef7"/>
+      <stop offset="100%" stop-color="#ffe8d4"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd9ea"/>
+      <stop offset="100%" stop-color="#ffc9de"/>
+    </linearGradient>
+    <linearGradient id="track" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5c98a"/>
+      <stop offset="100%" stop-color="#e8b978"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1440" height="900" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="1240" cy="100" r="58" fill="#fff4c9" opacity="0.85"/>
+  <circle cx="1240" cy="100" r="72" fill="#fff4c9" opacity="0.25"/>
+
+  <!-- clouds -->
+  <g fill="#fff" opacity="0.82">
+    <ellipse cx="180" cy="110" rx="72" ry="28"/><ellipse cx="230" cy="100" rx="48" ry="22"/><ellipse cx="130" cy="102" rx="40" ry="18"/>
+    <ellipse cx="620" cy="80" rx="80" ry="30"/><ellipse cx="680" cy="72" rx="52" ry="24"/><ellipse cx="560" cy="74" rx="44" ry="20"/>
+    <ellipse cx="980" cy="130" rx="68" ry="26"/><ellipse cx="1030" cy="122" rx="46" ry="20"/>
+  </g>
+
+  <!-- distant hills -->
+  <ellipse cx="360" cy="560" rx="320" ry="90" fill="url(#hill)" opacity="0.45"/>
+  <ellipse cx="980" cy="580" rx="380" ry="100" fill="url(#hill)" opacity="0.38"/>
+  <ellipse cx="720" cy="600" rx="420" ry="85" fill="#ffe5f2" opacity="0.35"/>
+
+  <!-- obstacle course banner -->
+  <rect x="520" y="48" width="400" height="52" rx="16" fill="#fff" stroke="#ffb8d4" stroke-width="4"/>
+  <text x="560" y="82" font-family="sans-serif" font-size="26" fill="#f07a3a" font-weight="700">ðóïs · ¢|r</text>
+
+  <!-- checkpoint flags -->
+  <g>
+    <line x1="280" y1="620" x2="280" y2="480" stroke="#c89563" stroke-width="4"/>
+    <path d="M280 480h72l-12 28H280z" fill="#ff8fcb"/>
+    <text x="292" y="502" font-size="13" fill="#fff" font-weight="700">w¹</text>
+
+    <line x1="720" y1="620" x2="720" y2="500" stroke="#c89563" stroke-width="4"/>
+    <path d="M720 500h68l-10 26H720z" fill="#6eb5ff"/>
+    <text x="732" y="520" font-size="12" fill="#fff"> ¹µ</text>
+
+    <line x1="1160" y1="620" x2="1160" y2="470" stroke="#c89563" stroke-width="4"/>
+    <path d="M1160 470h80l-12 30H1160z" fill="#ffd35a"/>
+    <text x="1172" y="492" font-size="13" fill="#fff" font-weight="700">È¹=</text>
+  </g>
+
+  <!-- platform obstacles (decorative background) -->
+  <g opacity="0.55">
+    <rect x="420" y="540" width="48" height="80" rx="8" fill="#ffb6d9" stroke="#ff8fcb" stroke-width="2"/>
+    <rect x="580" y="510" width="44" height="110" rx="8" fill="#ffb6d9" stroke="#ff8fcb" stroke-width="2"/>
+    <rect x="860" y="530" width="52" height="90" rx="8" fill="#ffb6d9" stroke="#ff8fcb" stroke-width="2"/>
+    <rect x="1020" y="520" width="40" height="100" rx="8" fill="#ffb6d9" stroke="#ff8fcb" stroke-width="2"/>
+  </g>
+
+  <!-- track ground -->
+  <rect y="620" width="1440" height="280" fill="url(#track)"/>
+  <rect y="620" width="1440" height="14" fill="#9ed88a" opacity="0.75"/>
+  <g stroke="#d9b078" stroke-width="2" opacity="0.6">
+    <line x1="0" y1="660" x2="1440" y2="660"/>
+    <line x1="0" y1="700" x2="1440" y2="700"/>
+    <line x1="0" y1="740" x2="1440" y2="740"/>
+    <line x1="0" y1="780" x2="1440" y2="780"/>
+  </g>
+
+  <!-- scattered toys on track -->
+  <circle cx="340" cy="680" r="14" fill="#6eb5ff" stroke="#4f97e6" stroke-width="3"/>
+  <circle cx="480" cy="710" r="12" fill="#ffd35a" stroke="#efb73a" stroke-width="3"/>
+  <circle cx="940" cy="690" r="13" fill="#ffb8cc" stroke="#e86b88" stroke-width="3"/>
+  <text x="1080" y="700" font-size="28">=</text>
+  <text x="180" y="720" font-size="24">=></text>
+
+  <!-- sound wave hint -->
+  <g stroke="#ff8fcb" stroke-width="4" stroke-linecap="round" opacity="0.35">
+    <line x1="120" y1="320" x2="120" y2="350"/><line x1="134" y1="310" x2="134" y2="360"/>
+    <line x1="148" y1="316" x2="148" y2="354"/><line x1="162" y1="306" x2="162" y2="364"/>
+  </g>
+  <rect x="96" y="368" width="88" height="32" rx="10" fill="#fff" stroke="#ffb8d4" stroke-width="2" opacity="0.9"/>
+  <text x="108" y="390" font-size="13" fill="#b07a93">'ðóôØ</text>
+
+  <!-- trophy shelf -->
+  <rect x="1280" y="280" width="120" height="12" rx="4" fill="#e7bb7d"/>
+  <rect x="1284" y="292" width="8" height="36" fill="#d8a86a"/>
+  <rect x="1388" y="292" width="8" height="36" fill="#d8a86a"/>
+  <text x="1300" y="278" font-size="28"><Æ</text>
+  <text x="1340" y="276" font-size="22">=</text>
+
+  <!-- paw path -->
+  <g fill="#ffb07a" opacity="0.16">
+    <g transform="translate(600 760)"><circle r="9"/><circle cx="-12" cy="-14" r="5"/><circle cx="12" cy="-14" r="5"/><circle cx="-16" cy="4" r="5"/><circle cx="16" cy="4" r="5"/></g>
+    <g transform="translate(780 790) scale(0.9)"><circle r="9"/><circle cx="-12" cy="-14" r="5"/><circle cx="12" cy="-14" r="5"/><circle cx="-16" cy="4" r="5"/><circle cx="16" cy="4" r="5"/></g>
+    <g transform="translate(960 770) scale(0.85)"><circle r="9"/><circle cx="-12" cy="-14" r="5"/><circle cx="12" cy="-14" r="5"/><circle cx="-16" cy="4" r="5"/><circle cx="16" cy="4" r="5"/></g>
+  </g>
+
+  <ellipse cx="720" cy="480" rx="520" ry="260" fill="#ffffff" opacity="0.28"/>
+</svg>
